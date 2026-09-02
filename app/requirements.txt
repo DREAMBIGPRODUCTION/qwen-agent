@@ -1,0 +1,3 @@
+httpx>=0.27
+prompt_toolkit>=3.0.47
+rich>=13.7

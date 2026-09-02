@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qwen-agent"
+version = "0.1.0"
+description = "Local Grok-style coding agent TUI that talks to a remote Qwen OpenAI-compatible API"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "prompt_toolkit>=3.0.47",
+    "rich>=13.7",
+]
+
+[project.scripts]
+qwen-agent = "qwen_agent.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
